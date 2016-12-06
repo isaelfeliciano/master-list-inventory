@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 150px;
+}
+tr {
+  border: 1px solid black;
+
+}
+td {
+/*   border: 1px solid black; */
+  display: inline-block;
+}
