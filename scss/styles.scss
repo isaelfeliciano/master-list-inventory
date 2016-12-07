@@ -8,48 +8,107 @@ $success-color:          #667092;
 $text-color:             #FFFFFF;
 $secondary-color:        #526AB4;
 $fenix-orange:           #F5A04C;
+$fenix-orange-2nd:       #FCB462;
 $input-background-color: #FFFFFF;
 $text-color-secondary:   #B8BBC6;
 
-body {
+body, html {
   // text-align: center;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
+
 
 header {
     width: 100%;
-    height: 3.5em;
+    height: 4em;
     background-color: #FFF;
     top: 0;
     position: absolute;
     z-index: 13;
-}
+    padding-top: 1em;
+	& section {
+		width: 90%;
+		position: relative;
+		top: -0.7em;
+	}
+	& section > div {/* Divs created by autocomplete plugin */
+		display: inline;
 
-header {
-	& > section {
+		& > div {
+			text-align: left;
+		}
+	}
+	& #search {
+		padding-right: 0;
+		margin-right: 0;
 		width: 80%;
 	}
-	& > section span {
-		// width: 95%;
-		overflow: hidden;
-		padding-right: 0.1em;
-	}
-	& > section span input {
-		width: 100%;
-	}
 	& button {
-		float: right;
+		padding: 0.5em;
+		margin: 0;
+		right: 0.45em;
+		position: relative;
+		border: 0;
+		color: #FFF;
+		background-color: $fenix-orange-2nd;
+		border-radius: 0 5px 5px 0;
 	}
+
+	& .filter-container {
+		width: 90%;
+		position: relative;
+		bottom: 0.5em;
+
+		& label {
+			background-color: grayscale(blue);
+			color: #FFF;
+			padding: 0.06em;
+			border-radius: 5px;
+		}
+	}		
 }
+
+
 
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  width: 95%;
+  width: 90%;
+  background-color: #FFF;
+  margin: 0.5em;
+  text-align: center;
+  color: $fenix-blue;
+  // border-radius: 8px;
+
+  & .row td {
+  	padding: 0.5em;
+  }
+
+  & .row__part-number {
+  	background-color: $secondary-color;
+  	color: #FFF;
+  	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  & .row__data-group td {
+  	background-color: $secondary-color;
+  	margin: 0.3em 0.1em;
+  	width: 5em;
+  	border-radius: 5px;
+  	color: #FFF;
+  }
+
+  & .separate-line {
+  	// border-bottom: 2px solid $secondary-color;
+  	width: 90%;
+  }
 }
 tr {
-  border: 1px solid black;
+  // border: 1px solid black;
 
 }
 td {
@@ -58,15 +117,17 @@ td {
 }
 
 span {
-	// white-space: pre-line;
+	white-space: pre-line;
 }
 
 #items-list {
-	width: 200%;
+	width: 100%;
 	height: 100%;
 	background-color: $fenix-blue;
-}
-
-.easy-autocomplete-container .eac-item {
-	// display: inline;
+	overflow: auto;
+	padding-top: 4em;
+	background-image: url(../img/fenix-mfg-logo-shadow.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 50%;
 }

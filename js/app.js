@@ -1,4 +1,4 @@
-var filter = "partDescription";
+var filter = $("#filter").val();
 var jsonData;
 $.getJSON("json/inventory_master_list.json", function(data) {
 	jsonData = data;
@@ -24,17 +24,22 @@ $("#btn-search").on("click", function(e) {
 	var items = JSON.search(jsonData, '//*['+ filter +'="'+ value +'"]');
 
 	for (var i = 0; i < items.length; i++) {
-		$("#items-list").append("<table>"+
-  "<tr><td>"+ items[i].item +"</td></tr>"+
-  "<tr><td>"+ items[i].partDescription +"</td></tr>"+
-  "<tr>"+
-    "<tr>"+
-      "<td><span>Stk UM:\n"+ items[i].stkUm +"</span></td>"+
-      "<td><span>Oper:\n"+ items[i].operation +"</span></td>"+
-      "<td><span>I/T:\n"+ items[i].itemType +"</span></td>"+
-    "</tr>"+ 
-  "</tr>"+
-  "<tr><td>"+ items[i].operationDescription +"</td></tr>"+
-"</table>");
+		$("#items-list").append('<table class="center-align">'+
+  '<tr class="row row__part-number"><td>'+ items[i].item +'</td></tr>'+
+  '<tr class="row row__part-description separate-line"><td>'+ items[i].partDescription +'</td></tr>'+
+    '<tr class="row row__data-group separate-line">'+
+      '<td><span>Stk UM:\n'+ items[i].stkUm +'</span></td>'+
+      '<td><span>Oper:\n'+ items[i].operation +'</span></td>'+
+      '<td><span>I/T:\n'+ items[i].itemType +'</span></td>'+
+    '</tr>'+ 
+  '<tr class="row row__oper-description"><td>'+ items[i].operationDescription +'</td></tr>'+
+'</table>');
 	}
+});
+
+$("#filter").on('change', function(e) {
+	filter = $("#filter").val();
+	options.getValue = filter;
+	$("#search").easyAutocomplete(options);
+	console.log(filter);
 });

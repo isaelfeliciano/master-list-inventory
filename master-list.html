@@ -2,30 +2,31 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inicial-sacale=1">
 	<!-- <title>Fenix MFG Master List</title> -->
 
 	<link rel="stylesheet" type="text/css" href="css/easy-autocomplete.min.css">
 	<link rel="stylesheet" type="text/css" href="css/easy-autocomplete.themes.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	<header>
-		<section class="center-align">
-			<button id="btn-search">Q</button>
-			<span>
-				<input id="search" type="text" name="search-input">
-			</span>
+		<section class="center-align center-text">
+			<input id="search" type="text" name="search-input">
+			<button id="btn-search"><i class="fa fa-search"></i></button>
 		</section>
-		<label for="filter">filter by</label>
-		<select name="filter" class="center-align">
-			<option value="item" selected="selected">Part Number</option>
-			<option value="partDescription">Part Description</option>
-			<option value="operationDescription">Operation Description</option>
-		</select>
+		<div class="filter-container center-align center-text">
+			<label for="filter">filter by</label>
+			<select id="filter" name="filter" class="center-align">
+				<option value="item" selected="selected">Part Number</option>
+				<option value="partDescription">Part Description</option>
+				<option value="operationDescription">Operation Description</option>
+			</select>
+		</div>
 	</header>
 
 	<div id="items-list">
-		
 	</div>
 
 
