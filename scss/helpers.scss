@@ -1,0 +1,45 @@
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	// display: block;
+	padding: 0;
+	margin: 0;
+}
+/* >>>>---- HELPERS ----*/
+.center-align, .center-align-absolute{
+	margin-left: auto;
+	margin-right: auto;
+}
+.center-align-absolute{
+  left: 0;
+  right: 0;
+}
+.center-text{
+	text-align: center;
+}
+
+.padding-sm{
+	padding: 1em;
+}
+.box-radius{
+  border-radius: 5px;
+}
+.not-visible, .notVisible {
+/*  visibility: hidden;*/
+	opacity: 0;
+	-webkit-transition:opacity 1s linear;
+}
+.no-display {
+	display: none;
+}
+.is-visible{
+	visibility: visible;
+	opacity: 1;
+}
+.invisible {
+    visibility: hidden;
+}
+
+
+/* ---- HELPERS ----<<<<*/

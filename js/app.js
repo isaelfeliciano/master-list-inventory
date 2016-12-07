@@ -29,9 +29,9 @@ $("#btn-search").on("click", function(e) {
   "<tr><td>"+ items[i].partDescription +"</td></tr>"+
   "<tr>"+
     "<tr>"+
-      "<td>"+ items[i].stkUm +"</td>"+
-      "<td>"+ items[i].operation +"</td>"+
-      "<td>"+ items[i].itemType +"</td>"+
+      "<td><span>Stk UM:\n"+ items[i].stkUm +"</span></td>"+
+      "<td><span>Oper:\n"+ items[i].operation +"</span></td>"+
+      "<td><span>I/T:\n"+ items[i].itemType +"</span></td>"+
     "</tr>"+ 
   "</tr>"+
   "<tr><td>"+ items[i].operationDescription +"</td></tr>"+

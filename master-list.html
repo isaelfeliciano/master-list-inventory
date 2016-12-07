@@ -2,15 +2,27 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Fenix MFG Master List</title>
+	<!-- <title>Fenix MFG Master List</title> -->
 
 	<link rel="stylesheet" type="text/css" href="css/easy-autocomplete.min.css">
 	<link rel="stylesheet" type="text/css" href="css/easy-autocomplete.themes.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-	<input id="search" type="text" name="search-input">
-	<button id="btn-search">Search</button>
+	<header>
+		<section class="center-align">
+			<button id="btn-search">Q</button>
+			<span>
+				<input id="search" type="text" name="search-input">
+			</span>
+		</section>
+		<label for="filter">filter by</label>
+		<select name="filter" class="center-align">
+			<option value="item" selected="selected">Part Number</option>
+			<option value="partDescription">Part Description</option>
+			<option value="operationDescription">Operation Description</option>
+		</select>
+	</header>
 
 	<div id="items-list">
 		
