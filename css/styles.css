@@ -42,11 +42,13 @@
 body, html {
   width: 100%;
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  font-size: 16px;
+  font-family: 'calibri', 'ubuntu'; }
 
 header {
   width: 100%;
-  height: 4em;
+  height: 4.8em;
   background-color: #FFF;
   top: 0;
   position: absolute;
@@ -60,20 +62,29 @@ header {
     /* Divs created by autocomplete plugin */
     display: inline; }
     header section > div > div {
-      text-align: left; }
+      text-align: left;
+      font-size: 2em;
+      color: #1F3064; }
+      header section > div > div ul li div {
+        font-size: 1.3em; }
   header #search {
     padding-right: 0;
     margin-right: 0;
-    width: 80%; }
+    width: 80%;
+    font-size: 1.2em; }
   header button {
     padding: 0.5em;
+    font-size: 1.2em;
     margin: 0;
     right: 0.45em;
     position: relative;
     border: 0;
     color: #FFF;
     background-color: #FCB462;
-    border-radius: 0 5px 5px 0; }
+    border-radius: 0 5px 5px 0;
+    box-shadow: -5px 0px 3px 0px rgba(0, 0, 0, 0.35); }
+    header button:active {
+      background-color: #F5A04C; }
   header .filter-container {
     width: 90%;
     position: relative;
@@ -121,7 +132,7 @@ span {
   height: 100%;
   background-color: #1F3064;
   overflow: auto;
-  padding-top: 4em;
+  padding-top: 4.8em;
   background-image: url(../img/fenix-mfg-logo-shadow.png);
   background-position: center;
   background-repeat: no-repeat;
