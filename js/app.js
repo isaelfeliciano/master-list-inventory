@@ -1,12 +1,14 @@
 var filter = $("#filter").val();
+var autoCompleteOptionsUrl = "json/inventory_master_list_no-duplicates.json";
 var jsonData;
 $.getJSON("json/inventory_master_list.json", function(data) {
 	jsonData = data;
 });
 
-var options = {
-	url: "json/inventory_master_list.json",
+var autoCompleteOptions = {
+	url: "json/inventory_master_list_no-duplicates.json",
 	getValue: filter,
+	requestDelay: 500,
 	list: {
 		maxNumberOfElements: 10,
 		match: {
@@ -15,12 +17,30 @@ var options = {
 	}
 };
 
-$("#search").easyAutocomplete(options);
+var autoCompleteOptions2 = {
+	url: "json/inventory_master_list_operation-description.json",
+	getValue: "operationDescription",
+	requestDelay: 500,
+	list: {
+		maxNumberOfElements: 10,
+		match: {
+			enabled: true
+		}
+	}
+};
+
+
+
+$("#search").easyAutocomplete(autoCompleteOptions);
 $("#btn-search").on("click", function(e) {
 	e.preventDefault();
+	var value = $("#search").val();
+	if (value == "" || value < 4) {
+		return;
+	}
+	loading(function() {
 	$("#items-list").empty();
 
-	var value = $("#search").val();
 	var items = JSON.search(jsonData, '//*['+ filter +'="'+ value +'"]');
 
 	for (var i = 0; i < items.length; i++) {
@@ -34,12 +54,28 @@ $("#btn-search").on("click", function(e) {
     '</tr>'+ 
   '<tr class="row row__oper-description"><td>'+ items[i].operationDescription +'</td></tr>'+
 '</table>');
+
+		if (i <= items.length) {
+			$(".loading-notification").removeClass('slideInUp').addClass('slideOutDown');
+		}
 	}
+});
 });
 
 $("#filter").on('change', function(e) {
 	filter = $("#filter").val();
-	options.getValue = filter;
-	$("#search").easyAutocomplete(options);
-	console.log(filter);
+	autoCompleteOptions.getValue = filter;
+
+	if (filter === "item" || filter === "partDescription") {
+		$("#search").easyAutocomplete(autoCompleteOptions);
+	} else {
+		$("#search").easyAutocomplete(autoCompleteOptions2);
+	}
 });
+
+function loading(callback) {
+	$(".loading-notification").removeClass('slideOutDown').addClass('slideInUp');
+	var tm = setTimeout(callback, 500);
+		
+}
+$(".loading-notification").addClass('slideOutDown');

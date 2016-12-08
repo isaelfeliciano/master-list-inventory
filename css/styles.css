@@ -126,3 +126,16 @@ span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50%; }
+
+.loading-notification {
+  width: 100%;
+  height: 3em;
+  position: absolute;
+  text-align: center;
+  background-color: #FCB462;
+  color: #FFF;
+  bottom: 0;
+  font-weight: bold; }
+  .loading-notification p {
+    top: 1em;
+    position: relative; }
