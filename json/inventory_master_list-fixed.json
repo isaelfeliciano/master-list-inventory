@@ -1,27 +1,4 @@
-
-var low = require('lowdb');
-
-// var db = low("db.json");
-var _ = require('lodash');
-
-var _db = require('underscore-db');
-
-_.mixin(_db);
-
-// db.defaults({data: {} });
-// db.set('data', {}).value();
-
-var uDB = {data: {}}; 
-
-// var jsonDB = require('jsondatabase');
-// var _data = new jsonDB({
-// 	path: './db.json'
-// }); 
-
-var mistDB = require('mistdb')('db');
-
-
-var jsonArray = [
+[
   {
     "item": "14359-02-A",
     "partDescription": " Module Assembly",
@@ -120,7 +97,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-F",
-    "partDescription": "#12 Lead Wire Black 6.8in",
+    "partDescription": "#12 Lead Wire Black 6.8(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -128,7 +105,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-F",
-    "partDescription": "#12 Lead Wire Black 6.8in",
+    "partDescription": "#12 Lead Wire Black 6.8(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "PRE TINNED LEADS",
@@ -136,7 +113,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-C",
-    "partDescription": "#12 Lead Wire Black 7.20in",
+    "partDescription": "#12 Lead Wire Black 7.20(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -144,7 +121,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-C",
-    "partDescription": "#12 Lead Wire Black 7.20in",
+    "partDescription": "#12 Lead Wire Black 7.20(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "PRE TINNED LEADS",
@@ -152,7 +129,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-E",
-    "partDescription": "#12 Lead Wire Black 7.40in",
+    "partDescription": "#12 Lead Wire Black 7.40(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -160,7 +137,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-E",
-    "partDescription": "#12 Lead Wire Black 7.40in",
+    "partDescription": "#12 Lead Wire Black 7.40(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "PRE TINNED LEADS",
@@ -168,7 +145,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-B",
-    "partDescription": "#12 Lead Wire Black 7.80in",
+    "partDescription": "#12 Lead Wire Black 7.80(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -176,7 +153,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-B",
-    "partDescription": "#12 Lead Wire Black 7.80in",
+    "partDescription": "#12 Lead Wire Black 7.80(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "PRE TINNED LEADS",
@@ -184,7 +161,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-A",
-    "partDescription": "#12 Lead Wire Black 8.40in",
+    "partDescription": "#12 Lead Wire Black 8.40(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -192,7 +169,7 @@ var jsonArray = [
   },
   {
     "item": "18897-01-A",
-    "partDescription": "#12 Lead Wire Black 8.40in",
+    "partDescription": "#12 Lead Wire Black 8.40(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "PRE TINNED LEADS",
@@ -248,7 +225,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-C11",
-    "partDescription": "#18 Black Lead Wire (21.85in)",
+    "partDescription": "#18 Black Lead Wire (21.85(quote))",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -256,7 +233,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-C11",
-    "partDescription": "#18 Black Lead Wire (21.85in)",
+    "partDescription": "#18 Black Lead Wire (21.85(quote))",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -264,7 +241,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-C11",
-    "partDescription": "#18 Black Lead Wire (21.85in)",
+    "partDescription": "#18 Black Lead Wire (21.85(quote))",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -288,7 +265,7 @@ var jsonArray = [
   },
   {
     "item": "31645-00-C",
-    "partDescription": "#18 Blue Lead Wire 18.25in",
+    "partDescription": "#18 Blue Lead Wire 18.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -296,7 +273,7 @@ var jsonArray = [
   },
   {
     "item": "31645-00-C",
-    "partDescription": "#18 Blue Lead Wire 18.25in",
+    "partDescription": "#18 Blue Lead Wire 18.25(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -304,7 +281,7 @@ var jsonArray = [
   },
   {
     "item": "31645-00-C",
-    "partDescription": "#18 Blue Lead Wire 18.25in",
+    "partDescription": "#18 Blue Lead Wire 18.25(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -312,7 +289,7 @@ var jsonArray = [
   },
   {
     "item": "31645-00-B",
-    "partDescription": "#18 Blue Lead Wire 19.25in",
+    "partDescription": "#18 Blue Lead Wire 19.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -320,7 +297,7 @@ var jsonArray = [
   },
   {
     "item": "31645-00-B",
-    "partDescription": "#18 Blue Lead Wire 19.25in",
+    "partDescription": "#18 Blue Lead Wire 19.25(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -328,7 +305,7 @@ var jsonArray = [
   },
   {
     "item": "31645-00-B",
-    "partDescription": "#18 Blue Lead Wire 19.25in",
+    "partDescription": "#18 Blue Lead Wire 19.25(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -336,7 +313,7 @@ var jsonArray = [
   },
   {
     "item": "40556-00-C",
-    "partDescription": "#18 Blue W/white Stripe 15.25in",
+    "partDescription": "#18 Blue W/white Stripe 15.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -344,7 +321,7 @@ var jsonArray = [
   },
   {
     "item": "40556-00-C",
-    "partDescription": "#18 Blue W/white Stripe 15.25in",
+    "partDescription": "#18 Blue W/white Stripe 15.25(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -352,7 +329,7 @@ var jsonArray = [
   },
   {
     "item": "40556-00-C",
-    "partDescription": "#18 Blue W/white Stripe 15.25in",
+    "partDescription": "#18 Blue W/white Stripe 15.25(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -360,7 +337,7 @@ var jsonArray = [
   },
   {
     "item": "40556-00-B",
-    "partDescription": "#18 Blue W/white Stripe 19.25in",
+    "partDescription": "#18 Blue W/white Stripe 19.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -368,7 +345,7 @@ var jsonArray = [
   },
   {
     "item": "40556-00-B",
-    "partDescription": "#18 Blue W/white Stripe 19.25in",
+    "partDescription": "#18 Blue W/white Stripe 19.25(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -376,7 +353,7 @@ var jsonArray = [
   },
   {
     "item": "40556-00-B",
-    "partDescription": "#18 Blue W/white Stripe 19.25in",
+    "partDescription": "#18 Blue W/white Stripe 19.25(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -392,7 +369,7 @@ var jsonArray = [
   },
   {
     "item": "10504-00-B01",
-    "partDescription": "#18 Green Lead Wire 18.00in",
+    "partDescription": "#18 Green Lead Wire 18.00(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -400,7 +377,7 @@ var jsonArray = [
   },
   {
     "item": "10504-00-B01",
-    "partDescription": "#18 Green Lead Wire 18.00in",
+    "partDescription": "#18 Green Lead Wire 18.00(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -408,7 +385,7 @@ var jsonArray = [
   },
   {
     "item": "10504-00-B01",
-    "partDescription": "#18 Green Lead Wire 18.00in",
+    "partDescription": "#18 Green Lead Wire 18.00(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -464,7 +441,7 @@ var jsonArray = [
   },
   {
     "item": "41854-00-D",
-    "partDescription": "#18 Red Lead Wire 25.5 in",
+    "partDescription": "#18 Red Lead Wire 25.5 (quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -472,7 +449,7 @@ var jsonArray = [
   },
   {
     "item": "41854-00-D",
-    "partDescription": "#18 Red Lead Wire 25.5 in",
+    "partDescription": "#18 Red Lead Wire 25.5 (quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -480,7 +457,7 @@ var jsonArray = [
   },
   {
     "item": "41854-00-D",
-    "partDescription": "#18 Red Lead Wire 25.5 in",
+    "partDescription": "#18 Red Lead Wire 25.5 (quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -552,7 +529,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-E",
-    "partDescription": "#18 White Lead Wire 15.25in",
+    "partDescription": "#18 White Lead Wire 15.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -560,7 +537,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-E",
-    "partDescription": "#18 White Lead Wire 15.25in",
+    "partDescription": "#18 White Lead Wire 15.25(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -568,7 +545,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-E",
-    "partDescription": "#18 White Lead Wire 15.25in",
+    "partDescription": "#18 White Lead Wire 15.25(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -576,7 +553,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-B",
-    "partDescription": "#18 White Lead Wire 18.00in",
+    "partDescription": "#18 White Lead Wire 18.00(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -584,7 +561,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-B",
-    "partDescription": "#18 White Lead Wire 18.00in",
+    "partDescription": "#18 White Lead Wire 18.00(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -592,7 +569,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-B",
-    "partDescription": "#18 White Lead Wire 18.00in",
+    "partDescription": "#18 White Lead Wire 18.00(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -600,7 +577,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-D",
-    "partDescription": "#18 White Lead Wire 18.25in",
+    "partDescription": "#18 White Lead Wire 18.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -608,7 +585,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-D",
-    "partDescription": "#18 White Lead Wire 18.25in",
+    "partDescription": "#18 White Lead Wire 18.25(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -616,7 +593,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-D",
-    "partDescription": "#18 White Lead Wire 18.25in",
+    "partDescription": "#18 White Lead Wire 18.25(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -624,7 +601,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-C",
-    "partDescription": "#18 White Lead Wire 19.25in",
+    "partDescription": "#18 White Lead Wire 19.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -632,7 +609,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-C",
-    "partDescription": "#18 White Lead Wire 19.25in",
+    "partDescription": "#18 White Lead Wire 19.25(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -640,7 +617,7 @@ var jsonArray = [
   },
   {
     "item": "31644-00-C",
-    "partDescription": "#18 White Lead Wire 19.25in",
+    "partDescription": "#18 White Lead Wire 19.25(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -720,7 +697,7 @@ var jsonArray = [
   },
   {
     "item": "41855-00-F",
-    "partDescription": "#18 Wht Lead Wire 21.87in",
+    "partDescription": "#18 Wht Lead Wire 21.87(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -728,7 +705,7 @@ var jsonArray = [
   },
   {
     "item": "41855-00-F",
-    "partDescription": "#18 Wht Lead Wire 21.87in",
+    "partDescription": "#18 Wht Lead Wire 21.87(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -736,7 +713,7 @@ var jsonArray = [
   },
   {
     "item": "41855-00-F",
-    "partDescription": "#18 Wht Lead Wire 21.87in",
+    "partDescription": "#18 Wht Lead Wire 21.87(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -944,7 +921,7 @@ var jsonArray = [
   },
   {
     "item": "13545-00-B",
-    "partDescription": "#22 Tinned Wire 1.7in",
+    "partDescription": "#22 Tinned Wire 1.7(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -3880,7 +3857,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-S3",
-    "partDescription": "120v Ign 10in Ezg Crimp Bulk",
+    "partDescription": "120v Ign 10(quote) Ezg Crimp Bulk",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "POTTING",
@@ -3888,7 +3865,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-S3",
-    "partDescription": "120v Ign 10in Ezg Crimp Bulk",
+    "partDescription": "120v Ign 10(quote) Ezg Crimp Bulk",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "BURN IN TEST",
@@ -3896,7 +3873,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-S3",
-    "partDescription": "120v Ign 10in Ezg Crimp Bulk",
+    "partDescription": "120v Ign 10(quote) Ezg Crimp Bulk",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "FINAL TEST",
@@ -3904,7 +3881,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-S3",
-    "partDescription": "120v Ign 10in Ezg Crimp Bulk",
+    "partDescription": "120v Ign 10(quote) Ezg Crimp Bulk",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "APPLY LABEL",
@@ -3912,7 +3889,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-S3",
-    "partDescription": "120v Ign 10in Ezg Crimp Bulk",
+    "partDescription": "120v Ign 10(quote) Ezg Crimp Bulk",
     "stkUM": "EA",
     "operation": 50,
     "operationDescription": "PACKAGING",
@@ -4016,7 +3993,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-C",
-    "partDescription": "120v Single Pole Ign. 14in 7 Mm",
+    "partDescription": "120v Single Pole Ign. 14(quote) 7 Mm",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "POTTING",
@@ -4024,7 +4001,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-C",
-    "partDescription": "120v Single Pole Ign. 14in 7 Mm",
+    "partDescription": "120v Single Pole Ign. 14(quote) 7 Mm",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "BURN IN TEST",
@@ -4032,7 +4009,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-C",
-    "partDescription": "120v Single Pole Ign. 14in 7 Mm",
+    "partDescription": "120v Single Pole Ign. 14(quote) 7 Mm",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "FINAL TEST",
@@ -4040,7 +4017,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-C",
-    "partDescription": "120v Single Pole Ign. 14in 7 Mm",
+    "partDescription": "120v Single Pole Ign. 14(quote) 7 Mm",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "APPLY LABEL",
@@ -4048,7 +4025,7 @@ var jsonArray = [
   },
   {
     "item": "41800-02-C",
-    "partDescription": "120v Single Pole Ign. 14in 7 Mm",
+    "partDescription": "120v Single Pole Ign. 14(quote) 7 Mm",
     "stkUM": "EA",
     "operation": 50,
     "operationDescription": "PACKAGING",
@@ -5112,7 +5089,7 @@ var jsonArray = [
   },
   {
     "item": "13283-00-N",
-    "partDescription": "3in Lead Wire #27",
+    "partDescription": "3(quote) Lead Wire #27",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "NO-ROUTABLE ITEM",
@@ -5696,7 +5673,7 @@ var jsonArray = [
   },
   {
     "item": "13283-00-P",
-    "partDescription": "5in Lead Wire",
+    "partDescription": "5(quote) Lead Wire",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "NO-ROUTABLE ITEM",
@@ -6072,7 +6049,7 @@ var jsonArray = [
   },
   {
     "item": "15208-00-B",
-    "partDescription": "7mm Ignition Cable 10.66in",
+    "partDescription": "7mm Ignition Cable 10.66(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT CABLE TO LENGHT",
@@ -6296,7 +6273,7 @@ var jsonArray = [
   },
   {
     "item": "12557-00-K",
-    "partDescription": "9.00in  Insulation Sleeve",
+    "partDescription": "9.00(quote)  Insulation Sleeve",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT INSULATION SLEEV",
@@ -6304,7 +6281,7 @@ var jsonArray = [
   },
   {
     "item": "10489-00-A",
-    "partDescription": "Acrylic Fiberglass Sleeve 18in",
+    "partDescription": "Acrylic Fiberglass Sleeve 18(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO SIZE",
@@ -16768,7 +16745,7 @@ var jsonArray = [
   },
   {
     "item": "98476",
-    "partDescription": "Choke Coil Assy. 2in Leads",
+    "partDescription": "Choke Coil Assy. 2(quote) Leads",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "INSERT/TAPE CORE",
@@ -16776,7 +16753,7 @@ var jsonArray = [
   },
   {
     "item": "98475",
-    "partDescription": "Choke Coil W/2in Lead",
+    "partDescription": "Choke Coil W/2(quote) Lead",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CHOKE COIL WINDING",
@@ -16784,7 +16761,7 @@ var jsonArray = [
   },
   {
     "item": "98475",
-    "partDescription": "Choke Coil W/2in Lead",
+    "partDescription": "Choke Coil W/2(quote) Lead",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "TININING",
@@ -17323,7 +17300,7 @@ var jsonArray = [
     "partDescription": "Coil Assembly",
     "stkUM": "EA",
     "operation": 8,
-    "operationDescription": "ASSM inAin TO inBin SECS",
+    "operationDescription": "ASSM (quote)A(quote) TO (quote)B(quote) SECS",
     "itemType": 0
   },
   {
@@ -17387,7 +17364,7 @@ var jsonArray = [
     "partDescription": "Coil Assembly",
     "stkUM": "EA",
     "operation": 8,
-    "operationDescription": "ASSM inAin TO inBin SECS",
+    "operationDescription": "ASSM (quote)A(quote) TO (quote)B(quote) SECS",
     "itemType": 0
   },
   {
@@ -17451,7 +17428,7 @@ var jsonArray = [
     "partDescription": "Coil Assembly",
     "stkUM": "EA",
     "operation": 8,
-    "operationDescription": "AMS inAin TO inBin SECS",
+    "operationDescription": "AMS (quote)A(quote) TO (quote)B(quote) SECS",
     "itemType": 0
   },
   {
@@ -17515,7 +17492,7 @@ var jsonArray = [
     "partDescription": "Coil Assembly",
     "stkUM": "EA",
     "operation": 8,
-    "operationDescription": "ASSM inAin TO inBin SECS",
+    "operationDescription": "ASSM (quote)A(quote) TO (quote)B(quote) SECS",
     "itemType": 0
   },
   {
@@ -17523,7 +17500,7 @@ var jsonArray = [
     "partDescription": "Coil Assembly",
     "stkUM": "EA",
     "operation": 9,
-    "operationDescription": "ASSM inAin TO inBin SECS",
+    "operationDescription": "ASSM (quote)A(quote) TO (quote)B(quote) SECS",
     "itemType": 0
   },
   {
@@ -17563,7 +17540,7 @@ var jsonArray = [
     "partDescription": "Coil Assembly For 41000",
     "stkUM": "EA",
     "operation": 8,
-    "operationDescription": "ASSM inAin TO inBin SECS",
+    "operationDescription": "ASSM (quote)A(quote) TO (quote)B(quote) SECS",
     "itemType": 0
   },
   {
@@ -19304,7 +19281,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-T",
-    "partDescription": "Crepe Cut .170in",
+    "partDescription": "Crepe Cut .170(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19312,7 +19289,7 @@ var jsonArray = [
   },
   {
     "item": "11868-00-L1",
-    "partDescription": "Crepe Cut .312in",
+    "partDescription": "Crepe Cut .312(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19320,7 +19297,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-A",
-    "partDescription": "Crepe Cut 1.0in",
+    "partDescription": "Crepe Cut 1.0(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19328,7 +19305,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-S",
-    "partDescription": "Crepe Tape Cut .090in",
+    "partDescription": "Crepe Tape Cut .090(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19336,7 +19313,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-X",
-    "partDescription": "Crepe Tape Cut .13in",
+    "partDescription": "Crepe Tape Cut .13(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19344,7 +19321,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-Y",
-    "partDescription": "Crepe Tape Cut .14in",
+    "partDescription": "Crepe Tape Cut .14(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19352,7 +19329,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-D",
-    "partDescription": "Crepe Tape Cut .16in",
+    "partDescription": "Crepe Tape Cut .16(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19360,7 +19337,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-N",
-    "partDescription": "Crepe Tape Cut .19in",
+    "partDescription": "Crepe Tape Cut .19(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19368,7 +19345,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-U",
-    "partDescription": "Crepe Tape Cut .30in",
+    "partDescription": "Crepe Tape Cut .30(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19376,7 +19353,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-G",
-    "partDescription": "Crepe Tape Cut .31in",
+    "partDescription": "Crepe Tape Cut .31(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19384,7 +19361,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-E",
-    "partDescription": "Crepe Tape Cut .38in",
+    "partDescription": "Crepe Tape Cut .38(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19392,7 +19369,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-R",
-    "partDescription": "Crepe Tape Cut .400in",
+    "partDescription": "Crepe Tape Cut .400(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO LENGTH",
@@ -19400,7 +19377,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-B",
-    "partDescription": "Crepe Tape Cut .44in",
+    "partDescription": "Crepe Tape Cut .44(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19408,7 +19385,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-C",
-    "partDescription": "Crepe Tape Cut .50in",
+    "partDescription": "Crepe Tape Cut .50(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19416,7 +19393,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-V",
-    "partDescription": "Crepe Tape Cut .55in",
+    "partDescription": "Crepe Tape Cut .55(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19424,7 +19401,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-W",
-    "partDescription": "Crepe Tape Cut .56in",
+    "partDescription": "Crepe Tape Cut .56(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19432,7 +19409,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-F",
-    "partDescription": "Crepe Tape Cut .63in",
+    "partDescription": "Crepe Tape Cut .63(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19440,7 +19417,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-H",
-    "partDescription": "Crepe Tape Cut .75in",
+    "partDescription": "Crepe Tape Cut .75(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19448,7 +19425,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-P",
-    "partDescription": "Crepe Tape Cut .88in",
+    "partDescription": "Crepe Tape Cut .88(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -19456,7 +19433,7 @@ var jsonArray = [
   },
   {
     "item": "12448-00-L",
-    "partDescription": "Crepe Tape Cut 0.66in",
+    "partDescription": "Crepe Tape Cut 0.66(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -20043,7 +20020,7 @@ var jsonArray = [
     "partDescription": "D C Assy - S G W/thermistor",
     "stkUM": "EA",
     "operation": 80,
-    "operationDescription": "SLEEV TO JUMPER 5in",
+    "operationDescription": "SLEEV TO JUMPER 5(quote)",
     "itemType": 0
   },
   {
@@ -20051,7 +20028,7 @@ var jsonArray = [
     "partDescription": "D C Assy - S G W/thermistor",
     "stkUM": "EA",
     "operation": 90,
-    "operationDescription": "SLEEV TO JUMPER 3in",
+    "operationDescription": "SLEEV TO JUMPER 3(quote)",
     "itemType": 0
   },
   {
@@ -20059,7 +20036,7 @@ var jsonArray = [
     "partDescription": "D C Assy - S G W/thermistor",
     "stkUM": "EA",
     "operation": 100,
-    "operationDescription": "SLEEV JUMPER 3in",
+    "operationDescription": "SLEEV JUMPER 3(quote)",
     "itemType": 0
   },
   {
@@ -20075,7 +20052,7 @@ var jsonArray = [
     "partDescription": "D C Assy - S G W/thermistor",
     "stkUM": "EA",
     "operation": 130,
-    "operationDescription": "FORM 5in JUMPER",
+    "operationDescription": "FORM 5(quote) JUMPER",
     "itemType": 0
   },
   {
@@ -29384,7 +29361,7 @@ var jsonArray = [
   },
   {
     "item": "13478-00-A1",
-    "partDescription": "Double Tape Cut .280in",
+    "partDescription": "Double Tape Cut .280(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO WIDTH",
@@ -29496,7 +29473,7 @@ var jsonArray = [
   },
   {
     "item": "11868-00-G1",
-    "partDescription": "Flat Tape Cut .25in",
+    "partDescription": "Flat Tape Cut .25(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -29512,7 +29489,7 @@ var jsonArray = [
   },
   {
     "item": "11868-00-P1",
-    "partDescription": "Flatback Tape Cut .30in",
+    "partDescription": "Flatback Tape Cut .30(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -29520,7 +29497,7 @@ var jsonArray = [
   },
   {
     "item": "11868-00-A1",
-    "partDescription": "Flatback Tape Cut 0.380in",
+    "partDescription": "Flatback Tape Cut 0.380(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -29528,7 +29505,7 @@ var jsonArray = [
   },
   {
     "item": "11868-00-C1",
-    "partDescription": "Flatback Tape Cut 0.560in",
+    "partDescription": "Flatback Tape Cut 0.560(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -29536,7 +29513,7 @@ var jsonArray = [
   },
   {
     "item": "11868-00-Q1",
-    "partDescription": "Flatback Tape Cut 0.660in",
+    "partDescription": "Flatback Tape Cut 0.660(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -31120,7 +31097,7 @@ var jsonArray = [
   },
   {
     "item": "33514-00-B",
-    "partDescription": "Heat-shrinkable Tubing Cut 2in",
+    "partDescription": "Heat-shrinkable Tubing Cut 2(quote)",
     "stkUM": "EA",
     "operation": 5,
     "operationDescription": "CUT SLEEVE",
@@ -31232,7 +31209,7 @@ var jsonArray = [
   },
   {
     "item": "15210-00-B",
-    "partDescription": "High Tension Lead Assy 12.24in",
+    "partDescription": "High Tension Lead Assy 12.24(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "ASSEMBLY TERMINAL",
@@ -31240,7 +31217,7 @@ var jsonArray = [
   },
   {
     "item": "15210-00-B",
-    "partDescription": "High Tension Lead Assy 12.24in",
+    "partDescription": "High Tension Lead Assy 12.24(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "BOOT & H.T ASSY",
@@ -31248,7 +31225,7 @@ var jsonArray = [
   },
   {
     "item": "15210-00-A",
-    "partDescription": "High Tension Lead Assy 8.24in",
+    "partDescription": "High Tension Lead Assy 8.24(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "ASSEMBLY TERMINAL",
@@ -31256,7 +31233,7 @@ var jsonArray = [
   },
   {
     "item": "15210-00-A",
-    "partDescription": "High Tension Lead Assy 8.24in",
+    "partDescription": "High Tension Lead Assy 8.24(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "BOOT & H.T ASSY",
@@ -32048,7 +32025,7 @@ var jsonArray = [
   },
   {
     "item": "01794-00-T",
-    "partDescription": "Ht Cable Cut 5mm, 10.15in",
+    "partDescription": "Ht Cable Cut 5mm, 10.15(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT CABLE",
@@ -34864,7 +34841,7 @@ var jsonArray = [
   },
   {
     "item": "25419-00-A",
-    "partDescription": "Ht Lead Assy 5mm, 10.32in",
+    "partDescription": "Ht Lead Assy 5mm, 10.32(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "ASSY BOOT & SPRING",
@@ -34872,7 +34849,7 @@ var jsonArray = [
   },
   {
     "item": "25419-00-A",
-    "partDescription": "Ht Lead Assy 5mm, 10.32in",
+    "partDescription": "Ht Lead Assy 5mm, 10.32(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "ASSY SLEEVE",
@@ -34904,7 +34881,7 @@ var jsonArray = [
   },
   {
     "item": "25419-00-B",
-    "partDescription": "Ht Lead Assy 5mm, 7.52in",
+    "partDescription": "Ht Lead Assy 5mm, 7.52(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "ASSY BOOT & SPRING",
@@ -34976,7 +34953,7 @@ var jsonArray = [
   },
   {
     "item": "02062-00-X03",
-    "partDescription": "Ht Lead Cut 20.52in",
+    "partDescription": "Ht Lead Cut 20.52(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE & STRIP",
@@ -34984,7 +34961,7 @@ var jsonArray = [
   },
   {
     "item": "02062-00-X03",
-    "partDescription": "Ht Lead Cut 20.52in",
+    "partDescription": "Ht Lead Cut 20.52(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "FLARE ONE END",
@@ -49816,7 +49793,7 @@ var jsonArray = [
   },
   {
     "item": "26194-00-A",
-    "partDescription": "Insulation Sleeve 11.22in",
+    "partDescription": "Insulation Sleeve 11.22(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "CUT SLEEVING",
@@ -49824,7 +49801,7 @@ var jsonArray = [
   },
   {
     "item": "26194-00-G",
-    "partDescription": "Insulation Sleeve 11.22in",
+    "partDescription": "Insulation Sleeve 11.22(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "CUT SLEEVING",
@@ -49832,7 +49809,7 @@ var jsonArray = [
   },
   {
     "item": "26194-00-E",
-    "partDescription": "Insulation Sleeve 11.59in",
+    "partDescription": "Insulation Sleeve 11.59(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "CUT SLEEVING",
@@ -49840,7 +49817,7 @@ var jsonArray = [
   },
   {
     "item": "26172-00-A",
-    "partDescription": "Insulation Sleeve 2.362in",
+    "partDescription": "Insulation Sleeve 2.362(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGTH",
@@ -49848,7 +49825,7 @@ var jsonArray = [
   },
   {
     "item": "26194-00-F",
-    "partDescription": "Insulation Sleeve 4.52in",
+    "partDescription": "Insulation Sleeve 4.52(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "CUT SLEEVING",
@@ -49856,7 +49833,7 @@ var jsonArray = [
   },
   {
     "item": "26194-00-B",
-    "partDescription": "Insulation Sleeve 5.22in",
+    "partDescription": "Insulation Sleeve 5.22(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -49864,7 +49841,7 @@ var jsonArray = [
   },
   {
     "item": "08581-00-X",
-    "partDescription": "Insulation Sleeve 5.25in",
+    "partDescription": "Insulation Sleeve 5.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT MANUALLY",
@@ -49872,7 +49849,7 @@ var jsonArray = [
   },
   {
     "item": "26194-00-D",
-    "partDescription": "Insulation Sleeve 8.04in",
+    "partDescription": "Insulation Sleeve 8.04(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT SLEEVING",
@@ -49880,7 +49857,7 @@ var jsonArray = [
   },
   {
     "item": "08581-00-W",
-    "partDescription": "Insulation Sleeve 9.00in",
+    "partDescription": "Insulation Sleeve 9.00(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT MANUALLY",
@@ -49888,7 +49865,7 @@ var jsonArray = [
   },
   {
     "item": "08581-00-V",
-    "partDescription": "Insulation Sleeve 9.50in",
+    "partDescription": "Insulation Sleeve 9.50(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT MANUALLY",
@@ -49944,7 +49921,7 @@ var jsonArray = [
   },
   {
     "item": "23217-00-A",
-    "partDescription": "Insulation Sleeve Cut 20.57in",
+    "partDescription": "Insulation Sleeve Cut 20.57(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT SLEEVE",
@@ -49952,7 +49929,7 @@ var jsonArray = [
   },
   {
     "item": "23217-00-B",
-    "partDescription": "Insulation Sleeve Cut 5.25in",
+    "partDescription": "Insulation Sleeve Cut 5.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT SLEEVE",
@@ -49960,7 +49937,7 @@ var jsonArray = [
   },
   {
     "item": "23217-00-C",
-    "partDescription": "Insulation Sleeve Cut 9.50in",
+    "partDescription": "Insulation Sleeve Cut 9.50(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT SLEEVE",
@@ -49984,7 +49961,7 @@ var jsonArray = [
   },
   {
     "item": "07523-00-M",
-    "partDescription": "Insulation Sleeving 1.00in",
+    "partDescription": "Insulation Sleeving 1.00(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT",
@@ -49992,7 +49969,7 @@ var jsonArray = [
   },
   {
     "item": "07523-00-L",
-    "partDescription": "Insulation Sleeving 4.90in",
+    "partDescription": "Insulation Sleeving 4.90(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT",
@@ -50192,7 +50169,7 @@ var jsonArray = [
   },
   {
     "item": "11977-00-K",
-    "partDescription": "Lead #25 Tinned Copper Wire 2in",
+    "partDescription": "Lead #25 Tinned Copper Wire 2(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT LEAD",
@@ -50968,7 +50945,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-D15",
-    "partDescription": "Lead Wire # 18 Black 10.18in",
+    "partDescription": "Lead Wire # 18 Black 10.18(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -50976,7 +50953,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-D14",
-    "partDescription": "Lead Wire # 18 Black 10.68in",
+    "partDescription": "Lead Wire # 18 Black 10.68(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -50984,7 +50961,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-E02",
-    "partDescription": "Lead Wire # 18 Black 12.08in",
+    "partDescription": "Lead Wire # 18 Black 12.08(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT & STRIP WIRE",
@@ -50992,7 +50969,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-E01",
-    "partDescription": "Lead Wire # 18 Black 12.29in",
+    "partDescription": "Lead Wire # 18 Black 12.29(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT & STRIP WIRE",
@@ -51000,7 +50977,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-D13",
-    "partDescription": "Lead Wire # 18 Black 13.18in",
+    "partDescription": "Lead Wire # 18 Black 13.18(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51008,7 +50985,7 @@ var jsonArray = [
   },
   {
     "item": "14051-00-L",
-    "partDescription": "Lead Wire # 18 Black 13.18in",
+    "partDescription": "Lead Wire # 18 Black 13.18(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51016,7 +50993,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-U",
-    "partDescription": "Lead Wire # 18 Black 13.22in",
+    "partDescription": "Lead Wire # 18 Black 13.22(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51024,7 +51001,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-D18",
-    "partDescription": "Lead Wire # 18 Black 3.16 in",
+    "partDescription": "Lead Wire # 18 Black 3.16 (quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51032,7 +51009,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-D19",
-    "partDescription": "Lead Wire # 18 Black 3.78 in",
+    "partDescription": "Lead Wire # 18 Black 3.78 (quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51040,7 +51017,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-D17",
-    "partDescription": "Lead Wire # 18 Black 4.78 in",
+    "partDescription": "Lead Wire # 18 Black 4.78 (quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51048,7 +51025,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-T",
-    "partDescription": "Lead Wire # 18 Black 4.83in",
+    "partDescription": "Lead Wire # 18 Black 4.83(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51072,7 +51049,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-N02",
-    "partDescription": "Lead Wire #16, 10.0in",
+    "partDescription": "Lead Wire #16, 10.0(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -51080,7 +51057,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-H02",
-    "partDescription": "Lead Wire #16, 10.64in",
+    "partDescription": "Lead Wire #16, 10.64(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -51088,7 +51065,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-V04",
-    "partDescription": "Lead Wire #16, 10.8in",
+    "partDescription": "Lead Wire #16, 10.8(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "Cut and Strip Cable",
@@ -51096,7 +51073,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-U02",
-    "partDescription": "Lead Wire #16, 13.14in",
+    "partDescription": "Lead Wire #16, 13.14(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -51104,7 +51081,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-B02",
-    "partDescription": "Lead Wire #16, 13.50in",
+    "partDescription": "Lead Wire #16, 13.50(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -51112,7 +51089,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-V02",
-    "partDescription": "Lead Wire #16, 13.50in",
+    "partDescription": "Lead Wire #16, 13.50(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -51120,7 +51097,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-L02",
-    "partDescription": "Lead Wire #16, 14.75in",
+    "partDescription": "Lead Wire #16, 14.75(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -51128,7 +51105,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-T02",
-    "partDescription": "Lead Wire #16, 15.95in",
+    "partDescription": "Lead Wire #16, 15.95(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -51136,7 +51113,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-V03",
-    "partDescription": "Lead Wire #16, 3.85in",
+    "partDescription": "Lead Wire #16, 3.85(quote)",
     "stkUM": "EA",
     "operation": 5,
     "operationDescription": "Cut and Strip Cable",
@@ -51144,7 +51121,7 @@ var jsonArray = [
   },
   {
     "item": "07607-00-J02",
-    "partDescription": "Lead Wire #16, 6.5in",
+    "partDescription": "Lead Wire #16, 6.5(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -51152,7 +51129,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-S01",
-    "partDescription": "Lead Wire #18, Black 2.65in",
+    "partDescription": "Lead Wire #18, Black 2.65(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51160,7 +51137,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-C01",
-    "partDescription": "Lead Wire #18, Black 3.56in",
+    "partDescription": "Lead Wire #18, Black 3.56(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51168,7 +51145,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-N01",
-    "partDescription": "Lead Wire #18, Black 5.25in",
+    "partDescription": "Lead Wire #18, Black 5.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51176,7 +51153,7 @@ var jsonArray = [
   },
   {
     "item": "15241-00-B",
-    "partDescription": "Lead Wire #20 Awg 3.15in Red",
+    "partDescription": "Lead Wire #20 Awg 3.15(quote) Red",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51184,7 +51161,7 @@ var jsonArray = [
   },
   {
     "item": "15241-00-B",
-    "partDescription": "Lead Wire #20 Awg 3.15in Red",
+    "partDescription": "Lead Wire #20 Awg 3.15(quote) Red",
     "stkUM": "EA",
     "operation": 15,
     "operationDescription": "TINNING TO LEADWIRES",
@@ -51192,7 +51169,7 @@ var jsonArray = [
   },
   {
     "item": "15240-00-B",
-    "partDescription": "Lead Wire #20 Awg 3.35in Orange",
+    "partDescription": "Lead Wire #20 Awg 3.35(quote) Orange",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51200,7 +51177,7 @@ var jsonArray = [
   },
   {
     "item": "15240-00-B",
-    "partDescription": "Lead Wire #20 Awg 3.35in Orange",
+    "partDescription": "Lead Wire #20 Awg 3.35(quote) Orange",
     "stkUM": "EA",
     "operation": 15,
     "operationDescription": "TINNING TO LEADWIRES",
@@ -51208,7 +51185,7 @@ var jsonArray = [
   },
   {
     "item": "15241-00-A",
-    "partDescription": "Lead Wire #20 Awg 6.65in Red",
+    "partDescription": "Lead Wire #20 Awg 6.65(quote) Red",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51216,7 +51193,7 @@ var jsonArray = [
   },
   {
     "item": "15241-00-A",
-    "partDescription": "Lead Wire #20 Awg 6.65in Red",
+    "partDescription": "Lead Wire #20 Awg 6.65(quote) Red",
     "stkUM": "EA",
     "operation": 15,
     "operationDescription": "TINNING TO LEADWIRES",
@@ -51224,7 +51201,7 @@ var jsonArray = [
   },
   {
     "item": "15240-00-A",
-    "partDescription": "Lead Wire #20 Awg 6.85in Orange",
+    "partDescription": "Lead Wire #20 Awg 6.85(quote) Orange",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51232,7 +51209,7 @@ var jsonArray = [
   },
   {
     "item": "15240-00-A",
-    "partDescription": "Lead Wire #20 Awg 6.85in Orange",
+    "partDescription": "Lead Wire #20 Awg 6.85(quote) Orange",
     "stkUM": "EA",
     "operation": 15,
     "operationDescription": "TINNING TO LEADWIRES",
@@ -51240,7 +51217,7 @@ var jsonArray = [
   },
   {
     "item": "11977-00-P",
-    "partDescription": "Lead Wire #25 Tinned Copper 3in",
+    "partDescription": "Lead Wire #25 Tinned Copper 3(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT LEAD",
@@ -51248,7 +51225,7 @@ var jsonArray = [
   },
   {
     "item": "11977-00-N",
-    "partDescription": "Lead Wire (1.4in)",
+    "partDescription": "Lead Wire (1.4(quote))",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT LEAD",
@@ -51256,7 +51233,7 @@ var jsonArray = [
   },
   {
     "item": "26199-00-C",
-    "partDescription": "Lead Wire 13.19in",
+    "partDescription": "Lead Wire 13.19(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT",
@@ -51304,7 +51281,7 @@ var jsonArray = [
   },
   {
     "item": "26199-00-F",
-    "partDescription": "Lead Wire 6.9in Green",
+    "partDescription": "Lead Wire 6.9(quote) Green",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT AND STRIP",
@@ -51312,7 +51289,7 @@ var jsonArray = [
   },
   {
     "item": "26199-00-A",
-    "partDescription": "Lead Wire 7.29in",
+    "partDescription": "Lead Wire 7.29(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT",
@@ -51320,7 +51297,7 @@ var jsonArray = [
   },
   {
     "item": "26199-00-A",
-    "partDescription": "Lead Wire 7.29in",
+    "partDescription": "Lead Wire 7.29(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP",
@@ -51328,7 +51305,7 @@ var jsonArray = [
   },
   {
     "item": "26199-00-B",
-    "partDescription": "Lead Wire 7.29in",
+    "partDescription": "Lead Wire 7.29(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT",
@@ -51336,7 +51313,7 @@ var jsonArray = [
   },
   {
     "item": "26199-00-E",
-    "partDescription": "Lead Wire 7.29in",
+    "partDescription": "Lead Wire 7.29(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT AND STRIP",
@@ -51344,7 +51321,7 @@ var jsonArray = [
   },
   {
     "item": "26199-00-E",
-    "partDescription": "Lead Wire 7.29in",
+    "partDescription": "Lead Wire 7.29(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "CLEAN CABLE",
@@ -51592,7 +51569,7 @@ var jsonArray = [
   },
   {
     "item": "10500-00-P",
-    "partDescription": "Lead Wire Red 3.56in",
+    "partDescription": "Lead Wire Red 3.56(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -51632,7 +51609,7 @@ var jsonArray = [
   },
   {
     "item": "26199-00-H",
-    "partDescription": "Lead Wire, #20 Awg 9.23in",
+    "partDescription": "Lead Wire, #20 Awg 9.23(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT & STRIP BOTH END",
@@ -51648,7 +51625,7 @@ var jsonArray = [
   },
   {
     "item": "15010-00-D",
-    "partDescription": "Masking Tape Cut To .19in",
+    "partDescription": "Masking Tape Cut To .19(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -51656,7 +51633,7 @@ var jsonArray = [
   },
   {
     "item": "15010-00-B",
-    "partDescription": "Masking Tape Cut To .25in",
+    "partDescription": "Masking Tape Cut To .25(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -51664,7 +51641,7 @@ var jsonArray = [
   },
   {
     "item": "15010-00-A",
-    "partDescription": "Masking Tape Cut To .38in",
+    "partDescription": "Masking Tape Cut To .38(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -51672,7 +51649,7 @@ var jsonArray = [
   },
   {
     "item": "15010-00-C",
-    "partDescription": "Masking Tape Cut To .59in",
+    "partDescription": "Masking Tape Cut To .59(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -52832,7 +52809,7 @@ var jsonArray = [
   },
   {
     "item": "30520-00-A",
-    "partDescription": "Module Assy Potted inryobiin",
+    "partDescription": "Module Assy Potted (quote)ryobi(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "POTTING",
@@ -52840,7 +52817,7 @@ var jsonArray = [
   },
   {
     "item": "30520-00-A",
-    "partDescription": "Module Assy Potted inryobiin",
+    "partDescription": "Module Assy Potted (quote)ryobi(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STAMPING",
@@ -52848,7 +52825,7 @@ var jsonArray = [
   },
   {
     "item": "30520-00-A",
-    "partDescription": "Module Assy Potted inryobiin",
+    "partDescription": "Module Assy Potted (quote)ryobi(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TRIMMING",
@@ -52856,7 +52833,7 @@ var jsonArray = [
   },
   {
     "item": "30520-00-A",
-    "partDescription": "Module Assy Potted inryobiin",
+    "partDescription": "Module Assy Potted (quote)ryobi(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "FINAL INSPECTION",
@@ -52864,7 +52841,7 @@ var jsonArray = [
   },
   {
     "item": "30520-00-A",
-    "partDescription": "Module Assy Potted inryobiin",
+    "partDescription": "Module Assy Potted (quote)ryobi(quote)",
     "stkUM": "EA",
     "operation": 50,
     "operationDescription": "FINAL TEST",
@@ -52872,7 +52849,7 @@ var jsonArray = [
   },
   {
     "item": "30520-00-A",
-    "partDescription": "Module Assy Potted inryobiin",
+    "partDescription": "Module Assy Potted (quote)ryobi(quote)",
     "stkUM": "EA",
     "operation": 60,
     "operationDescription": "PACK UNITS",
@@ -52880,7 +52857,7 @@ var jsonArray = [
   },
   {
     "item": "30820",
-    "partDescription": "Module Assy Potted intecumsehin",
+    "partDescription": "Module Assy Potted (quote)tecumseh(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "POTTING",
@@ -52888,7 +52865,7 @@ var jsonArray = [
   },
   {
     "item": "30820",
-    "partDescription": "Module Assy Potted intecumsehin",
+    "partDescription": "Module Assy Potted (quote)tecumseh(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STAMPING",
@@ -52896,7 +52873,7 @@ var jsonArray = [
   },
   {
     "item": "30820",
-    "partDescription": "Module Assy Potted intecumsehin",
+    "partDescription": "Module Assy Potted (quote)tecumseh(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TRIMMING",
@@ -52904,7 +52881,7 @@ var jsonArray = [
   },
   {
     "item": "30820",
-    "partDescription": "Module Assy Potted intecumsehin",
+    "partDescription": "Module Assy Potted (quote)tecumseh(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "FINAL INSPECTION",
@@ -52912,7 +52889,7 @@ var jsonArray = [
   },
   {
     "item": "30820",
-    "partDescription": "Module Assy Potted intecumsehin",
+    "partDescription": "Module Assy Potted (quote)tecumseh(quote)",
     "stkUM": "EA",
     "operation": 50,
     "operationDescription": "FINAL TEST",
@@ -52920,7 +52897,7 @@ var jsonArray = [
   },
   {
     "item": "30820",
-    "partDescription": "Module Assy Potted intecumsehin",
+    "partDescription": "Module Assy Potted (quote)tecumseh(quote)",
     "stkUM": "EA",
     "operation": 60,
     "operationDescription": "PACK UNITS",
@@ -58032,7 +58009,7 @@ var jsonArray = [
   },
   {
     "item": "30520-02-A",
-    "partDescription": "Module Potted inryobiin S G W Th",
+    "partDescription": "Module Potted (quote)ryobi(quote) S G W Th",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "POTTING",
@@ -58040,7 +58017,7 @@ var jsonArray = [
   },
   {
     "item": "30520-02-A",
-    "partDescription": "Module Potted inryobiin S G W Th",
+    "partDescription": "Module Potted (quote)ryobi(quote) S G W Th",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STAMPING",
@@ -58048,7 +58025,7 @@ var jsonArray = [
   },
   {
     "item": "30520-02-A",
-    "partDescription": "Module Potted inryobiin S G W Th",
+    "partDescription": "Module Potted (quote)ryobi(quote) S G W Th",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TRIMMING",
@@ -58056,7 +58033,7 @@ var jsonArray = [
   },
   {
     "item": "30520-02-A",
-    "partDescription": "Module Potted inryobiin S G W Th",
+    "partDescription": "Module Potted (quote)ryobi(quote) S G W Th",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "FINAL INSPECTION",
@@ -58064,7 +58041,7 @@ var jsonArray = [
   },
   {
     "item": "30520-02-A",
-    "partDescription": "Module Potted inryobiin S G W Th",
+    "partDescription": "Module Potted (quote)ryobi(quote) S G W Th",
     "stkUM": "EA",
     "operation": 50,
     "operationDescription": "FINAL TEST",
@@ -59051,7 +59028,7 @@ var jsonArray = [
     "partDescription": "Mounting Insert, Machined Alum",
     "stkUM": "EA",
     "operation": 10,
-    "operationDescription": "MACHINED HOLE .242in",
+    "operationDescription": "MACHINED HOLE .242(quote)",
     "itemType": 0
   },
   {
@@ -59059,7 +59036,7 @@ var jsonArray = [
     "partDescription": "Mounting Insert, Machined Ss",
     "stkUM": "EA",
     "operation": 10,
-    "operationDescription": "MACHINED HOLE .242in",
+    "operationDescription": "MACHINED HOLE .242(quote)",
     "itemType": 0
   },
   {
@@ -68152,7 +68129,7 @@ var jsonArray = [
   },
   {
     "item": "15016-00-B",
-    "partDescription": "Polyester Tape .19in",
+    "partDescription": "Polyester Tape .19(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -68160,7 +68137,7 @@ var jsonArray = [
   },
   {
     "item": "15016-00-A",
-    "partDescription": "Polyester Tape .25in",
+    "partDescription": "Polyester Tape .25(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -77544,7 +77521,7 @@ var jsonArray = [
   },
   {
     "item": "13724-04-A",
-    "partDescription": "Primary Assembly-inhybridin",
+    "partDescription": "Primary Assembly-(quote)hybrid(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "MOUNT TRIGGER",
@@ -77552,7 +77529,7 @@ var jsonArray = [
   },
   {
     "item": "13724-04-A",
-    "partDescription": "Primary Assembly-inhybridin",
+    "partDescription": "Primary Assembly-(quote)hybrid(quote)",
     "stkUM": "EA",
     "operation": 50,
     "operationDescription": "SLDR TRG&SCR LEADS C",
@@ -77560,7 +77537,7 @@ var jsonArray = [
   },
   {
     "item": "13724-04-A",
-    "partDescription": "Primary Assembly-inhybridin",
+    "partDescription": "Primary Assembly-(quote)hybrid(quote)",
     "stkUM": "EA",
     "operation": 60,
     "operationDescription": "PRIM LEAD SLDR GNDT",
@@ -77568,7 +77545,7 @@ var jsonArray = [
   },
   {
     "item": "13724-04-A",
-    "partDescription": "Primary Assembly-inhybridin",
+    "partDescription": "Primary Assembly-(quote)hybrid(quote)",
     "stkUM": "EA",
     "operation": 70,
     "operationDescription": "TWIST SLDR TRG MT SL",
@@ -77576,7 +77553,7 @@ var jsonArray = [
   },
   {
     "item": "13724-04-A",
-    "partDescription": "Primary Assembly-inhybridin",
+    "partDescription": "Primary Assembly-(quote)hybrid(quote)",
     "stkUM": "EA",
     "operation": 80,
     "operationDescription": "ASY PRIM,KILL,SLEV,S",
@@ -77584,7 +77561,7 @@ var jsonArray = [
   },
   {
     "item": "13724-04-A",
-    "partDescription": "Primary Assembly-inhybridin",
+    "partDescription": "Primary Assembly-(quote)hybrid(quote)",
     "stkUM": "EA",
     "operation": 90,
     "operationDescription": "MOUNT SPACER WASHER",
@@ -77592,7 +77569,7 @@ var jsonArray = [
   },
   {
     "item": "13724-04-A",
-    "partDescription": "Primary Assembly-inhybridin",
+    "partDescription": "Primary Assembly-(quote)hybrid(quote)",
     "stkUM": "EA",
     "operation": 95,
     "operationDescription": "PRE-PRE POT TEST",
@@ -77600,7 +77577,7 @@ var jsonArray = [
   },
   {
     "item": "13724-04-A",
-    "partDescription": "Primary Assembly-inhybridin",
+    "partDescription": "Primary Assembly-(quote)hybrid(quote)",
     "stkUM": "EA",
     "operation": 100,
     "operationDescription": "DOBLE RESISTANCE CHK",
@@ -77608,7 +77585,7 @@ var jsonArray = [
   },
   {
     "item": "13724-04-A",
-    "partDescription": "Primary Assembly-inhybridin",
+    "partDescription": "Primary Assembly-(quote)hybrid(quote)",
     "stkUM": "EA",
     "operation": 120,
     "operationDescription": "VISUAL INSP & PACK",
@@ -85024,7 +85001,7 @@ var jsonArray = [
   },
   {
     "item": "60154",
-    "partDescription": "Secondary Assy Potted-holesinain",
+    "partDescription": "Secondary Assy Potted-holes(quote)a(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "ASSY SEC. IN TRAY",
@@ -85032,7 +85009,7 @@ var jsonArray = [
   },
   {
     "item": "60154",
-    "partDescription": "Secondary Assy Potted-holesinain",
+    "partDescription": "Secondary Assy Potted-holes(quote)a(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "CONTINUUTY TEST",
@@ -85040,7 +85017,7 @@ var jsonArray = [
   },
   {
     "item": "60154",
-    "partDescription": "Secondary Assy Potted-holesinain",
+    "partDescription": "Secondary Assy Potted-holes(quote)a(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "LDL/ULDL OVEN",
@@ -85048,7 +85025,7 @@ var jsonArray = [
   },
   {
     "item": "60154",
-    "partDescription": "Secondary Assy Potted-holesinain",
+    "partDescription": "Secondary Assy Potted-holes(quote)a(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "POTTING",
@@ -85056,7 +85033,7 @@ var jsonArray = [
   },
   {
     "item": "60161",
-    "partDescription": "Secondary Assy Potted-pins inbin",
+    "partDescription": "Secondary Assy Potted-pins (quote)b(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "ASSY SEC. IN TRAY",
@@ -85064,7 +85041,7 @@ var jsonArray = [
   },
   {
     "item": "60161",
-    "partDescription": "Secondary Assy Potted-pins inbin",
+    "partDescription": "Secondary Assy Potted-pins (quote)b(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "CONTINUUTY TEST",
@@ -85072,7 +85049,7 @@ var jsonArray = [
   },
   {
     "item": "60161",
-    "partDescription": "Secondary Assy Potted-pins inbin",
+    "partDescription": "Secondary Assy Potted-pins (quote)b(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "LDL/ULDL OVEN",
@@ -85080,7 +85057,7 @@ var jsonArray = [
   },
   {
     "item": "60161",
-    "partDescription": "Secondary Assy Potted-pins inbin",
+    "partDescription": "Secondary Assy Potted-pins (quote)b(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "POTTING",
@@ -85096,7 +85073,7 @@ var jsonArray = [
   },
   {
     "item": "11010-DR",
-    "partDescription": "Secondary Finished Letter inhin",
+    "partDescription": "Secondary Finished Letter (quote)h(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "STICK WINDING",
@@ -85104,7 +85081,7 @@ var jsonArray = [
   },
   {
     "item": "11010-DR",
-    "partDescription": "Secondary Finished Letter inhin",
+    "partDescription": "Secondary Finished Letter (quote)h(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "SOLDER STICK",
@@ -85112,7 +85089,7 @@ var jsonArray = [
   },
   {
     "item": "11010-DR",
-    "partDescription": "Secondary Finished Letter inhin",
+    "partDescription": "Secondary Finished Letter (quote)h(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "REMOVE TAPE",
@@ -85120,7 +85097,7 @@ var jsonArray = [
   },
   {
     "item": "11010-DR",
-    "partDescription": "Secondary Finished Letter inhin",
+    "partDescription": "Secondary Finished Letter (quote)h(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "BANDSAW",
@@ -85144,7 +85121,7 @@ var jsonArray = [
   },
   {
     "item": "60155",
-    "partDescription": "Secondary Housing-holes inain",
+    "partDescription": "Secondary Housing-holes (quote)a(quote)",
     "stkUM": "TR",
     "operation": 10,
     "operationDescription": "MOLD TRAY",
@@ -85152,7 +85129,7 @@ var jsonArray = [
   },
   {
     "item": "60155",
-    "partDescription": "Secondary Housing-holes inain",
+    "partDescription": "Secondary Housing-holes (quote)a(quote)",
     "stkUM": "TR",
     "operation": 20,
     "operationDescription": "ETCHING",
@@ -85160,7 +85137,7 @@ var jsonArray = [
   },
   {
     "item": "60162",
-    "partDescription": "Secondary Housing-pins inbin",
+    "partDescription": "Secondary Housing-pins (quote)b(quote)",
     "stkUM": "TR",
     "operation": 10,
     "operationDescription": "MOLD TRAY",
@@ -85168,7 +85145,7 @@ var jsonArray = [
   },
   {
     "item": "60162",
-    "partDescription": "Secondary Housing-pins inbin",
+    "partDescription": "Secondary Housing-pins (quote)b(quote)",
     "stkUM": "TR",
     "operation": 20,
     "operationDescription": "ETCHING",
@@ -85331,7 +85308,7 @@ var jsonArray = [
     "partDescription": "Secondary Module Assy",
     "stkUM": "EA",
     "operation": 10,
-    "operationDescription": "ASSY inAin TO inBin SEC",
+    "operationDescription": "ASSY (quote)A(quote) TO (quote)B(quote) SEC",
     "itemType": 0
   },
   {
@@ -86216,7 +86193,7 @@ var jsonArray = [
   },
   {
     "item": "07159-00-BDR",
-    "partDescription": "Secondary W/lead Letter int1in",
+    "partDescription": "Secondary W/lead Letter (quote)t1(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "SOLDER INSIDE LEAD",
@@ -87040,7 +87017,7 @@ var jsonArray = [
   },
   {
     "item": "23735",
-    "partDescription": "Secondary Winding ine²in",
+    "partDescription": "Secondary Winding (quote)e²(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STICK WINDING",
@@ -87048,7 +87025,7 @@ var jsonArray = [
   },
   {
     "item": "23735",
-    "partDescription": "Secondary Winding ine²in",
+    "partDescription": "Secondary Winding (quote)e²(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "SLDR SEC. STICK/TAPE",
@@ -87056,7 +87033,7 @@ var jsonArray = [
   },
   {
     "item": "23735",
-    "partDescription": "Secondary Winding ine²in",
+    "partDescription": "Secondary Winding (quote)e²(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "REMOVE BLACK TAPE",
@@ -87064,7 +87041,7 @@ var jsonArray = [
   },
   {
     "item": "23735",
-    "partDescription": "Secondary Winding ine²in",
+    "partDescription": "Secondary Winding (quote)e²(quote)",
     "stkUM": "EA",
     "operation": 50,
     "operationDescription": "BAND SAW",
@@ -87072,7 +87049,7 @@ var jsonArray = [
   },
   {
     "item": "13865-DR",
-    "partDescription": "Secondary Winding (d.r.) ina Bin",
+    "partDescription": "Secondary Winding (d.r.) (quote)a B(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "STICK WINDING",
@@ -87720,7 +87697,7 @@ var jsonArray = [
   },
   {
     "item": "13577-DR",
-    "partDescription": "Secondary Winding Letter in==>in",
+    "partDescription": "Secondary Winding Letter (quote)==>(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "STICK WINDING",
@@ -87728,7 +87705,7 @@ var jsonArray = [
   },
   {
     "item": "13577-DR",
-    "partDescription": "Secondary Winding Letter in==>in",
+    "partDescription": "Secondary Winding Letter (quote)==>(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "SOLDER STICK",
@@ -87736,7 +87713,7 @@ var jsonArray = [
   },
   {
     "item": "13577-DR",
-    "partDescription": "Secondary Winding Letter in==>in",
+    "partDescription": "Secondary Winding Letter (quote)==>(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "REMOVE TAPE",
@@ -87744,7 +87721,7 @@ var jsonArray = [
   },
   {
     "item": "13577-DR",
-    "partDescription": "Secondary Winding Letter in==>in",
+    "partDescription": "Secondary Winding Letter (quote)==>(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "BANDSAW",
@@ -87752,7 +87729,7 @@ var jsonArray = [
   },
   {
     "item": "31231",
-    "partDescription": "Secondary Winding Letter ino1in",
+    "partDescription": "Secondary Winding Letter (quote)o1(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STICK WINDING",
@@ -87760,7 +87737,7 @@ var jsonArray = [
   },
   {
     "item": "31231",
-    "partDescription": "Secondary Winding Letter ino1in",
+    "partDescription": "Secondary Winding Letter (quote)o1(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "SOLDER STICK",
@@ -87768,7 +87745,7 @@ var jsonArray = [
   },
   {
     "item": "31231",
-    "partDescription": "Secondary Winding Letter ino1in",
+    "partDescription": "Secondary Winding Letter (quote)o1(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "REMOVE TAPE",
@@ -87776,7 +87753,7 @@ var jsonArray = [
   },
   {
     "item": "31231",
-    "partDescription": "Secondary Winding Letter ino1in",
+    "partDescription": "Secondary Winding Letter (quote)o1(quote)",
     "stkUM": "EA",
     "operation": 50,
     "operationDescription": "BANDSAW",
@@ -87784,7 +87761,7 @@ var jsonArray = [
   },
   {
     "item": "22641",
-    "partDescription": "Secondary Winding Letter ino2in",
+    "partDescription": "Secondary Winding Letter (quote)o2(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STICK WINDING",
@@ -87792,7 +87769,7 @@ var jsonArray = [
   },
   {
     "item": "22641",
-    "partDescription": "Secondary Winding Letter ino2in",
+    "partDescription": "Secondary Winding Letter (quote)o2(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "SOLDER STICK",
@@ -87800,7 +87777,7 @@ var jsonArray = [
   },
   {
     "item": "22641",
-    "partDescription": "Secondary Winding Letter ino2in",
+    "partDescription": "Secondary Winding Letter (quote)o2(quote)",
     "stkUM": "EA",
     "operation": 40,
     "operationDescription": "REMOVE TAPE",
@@ -87808,7 +87785,7 @@ var jsonArray = [
   },
   {
     "item": "22641",
-    "partDescription": "Secondary Winding Letter ino2in",
+    "partDescription": "Secondary Winding Letter (quote)o2(quote)",
     "stkUM": "EA",
     "operation": 50,
     "operationDescription": "BANDSAW",
@@ -88160,7 +88137,7 @@ var jsonArray = [
   },
   {
     "item": "11833-00-D",
-    "partDescription": "Shrink Tubing Cut 1.0in",
+    "partDescription": "Shrink Tubing Cut 1.0(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TUBING",
@@ -88168,7 +88145,7 @@ var jsonArray = [
   },
   {
     "item": "11833-00-C",
-    "partDescription": "Shrink Tubing Cut 1.8in",
+    "partDescription": "Shrink Tubing Cut 1.8(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TUBING",
@@ -88256,7 +88233,7 @@ var jsonArray = [
   },
   {
     "item": "14058-00-C01",
-    "partDescription": "Sleeve #1 Bvt 5.0in",
+    "partDescription": "Sleeve #1 Bvt 5.0(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -88264,7 +88241,7 @@ var jsonArray = [
   },
   {
     "item": "14058-00-B01",
-    "partDescription": "Sleeve #1 Bvt 7.00in",
+    "partDescription": "Sleeve #1 Bvt 7.00(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -88368,7 +88345,7 @@ var jsonArray = [
   },
   {
     "item": "07523-00-H",
-    "partDescription": "Sleeve #7 0.60in",
+    "partDescription": "Sleeve #7 0.60(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT",
@@ -88376,7 +88353,7 @@ var jsonArray = [
   },
   {
     "item": "07523-00-G",
-    "partDescription": "Sleeve #7 9.35in",
+    "partDescription": "Sleeve #7 9.35(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT",
@@ -88392,7 +88369,7 @@ var jsonArray = [
   },
   {
     "item": "03415-00-D",
-    "partDescription": "Sleeve #7 Nafg, 1.25in",
+    "partDescription": "Sleeve #7 Nafg, 1.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -88400,7 +88377,7 @@ var jsonArray = [
   },
   {
     "item": "03415-00-H",
-    "partDescription": "Sleeve #7 Nafg, 1.25in",
+    "partDescription": "Sleeve #7 Nafg, 1.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT TO LENGHT",
@@ -88408,7 +88385,7 @@ var jsonArray = [
   },
   {
     "item": "03416-00-A",
-    "partDescription": "Sleeve #7 Nafg, 1.25in",
+    "partDescription": "Sleeve #7 Nafg, 1.25(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT SLEEVE AND ASSY",
@@ -88496,7 +88473,7 @@ var jsonArray = [
   },
   {
     "item": "13737-00-R",
-    "partDescription": "Sleeving Cut To .38in",
+    "partDescription": "Sleeving Cut To .38(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT SLEEVING",
@@ -88512,7 +88489,7 @@ var jsonArray = [
   },
   {
     "item": "14164-00-E",
-    "partDescription": "Slv #3 Blk 5.64in",
+    "partDescription": "Slv #3 Blk 5.64(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT SLEEVE",
@@ -89392,7 +89369,7 @@ var jsonArray = [
   },
   {
     "item": "11868-00-A2",
-    "partDescription": "Solder Mask Tape Cut .38in",
+    "partDescription": "Solder Mask Tape Cut .38(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -89400,7 +89377,7 @@ var jsonArray = [
   },
   {
     "item": "11868-00-G2",
-    "partDescription": "Solder Masktape Cut .25in",
+    "partDescription": "Solder Masktape Cut .25(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -92552,7 +92529,7 @@ var jsonArray = [
   },
   {
     "item": "12447-00-E",
-    "partDescription": "Tape #44 Cut .38in",
+    "partDescription": "Tape #44 Cut .38(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -92560,7 +92537,7 @@ var jsonArray = [
   },
   {
     "item": "12447-00-G",
-    "partDescription": "Tape #44 Cut .600in",
+    "partDescription": "Tape #44 Cut .600(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT TO WIDTH",
@@ -92568,7 +92545,7 @@ var jsonArray = [
   },
   {
     "item": "12447-00-H",
-    "partDescription": "Tape #44 Cut .88in",
+    "partDescription": "Tape #44 Cut .88(quote)",
     "stkUM": "MT",
     "operation": 10,
     "operationDescription": "CUT LOG TO WIDTH",
@@ -94720,7 +94697,7 @@ var jsonArray = [
   },
   {
     "item": "12949-00-MD",
-    "partDescription": "Wall Paper Sec inoin",
+    "partDescription": "Wall Paper Sec (quote)o(quote)",
     "stkUM": "EA",
     "operation": 5,
     "operationDescription": "CUT FOIL",
@@ -94728,7 +94705,7 @@ var jsonArray = [
   },
   {
     "item": "12949-00-MD",
-    "partDescription": "Wall Paper Sec inoin",
+    "partDescription": "Wall Paper Sec (quote)o(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "PREPARE WALL PAPER",
@@ -94736,7 +94713,7 @@ var jsonArray = [
   },
   {
     "item": "12949-00-MD",
-    "partDescription": "Wall Paper Sec inoin",
+    "partDescription": "Wall Paper Sec (quote)o(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "CUT WALL PAPER",
@@ -94744,7 +94721,7 @@ var jsonArray = [
   },
   {
     "item": "12949-00-ND",
-    "partDescription": "Wall Paper Sec inrin",
+    "partDescription": "Wall Paper Sec (quote)r(quote)",
     "stkUM": "EA",
     "operation": 5,
     "operationDescription": "CUT FOIL",
@@ -94752,7 +94729,7 @@ var jsonArray = [
   },
   {
     "item": "12949-00-ND",
-    "partDescription": "Wall Paper Sec inrin",
+    "partDescription": "Wall Paper Sec (quote)r(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "PREPARE WALL PAPER",
@@ -94760,7 +94737,7 @@ var jsonArray = [
   },
   {
     "item": "12949-00-ND",
-    "partDescription": "Wall Paper Sec inrin",
+    "partDescription": "Wall Paper Sec (quote)r(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "CUT WALL PAPER",
@@ -94824,7 +94801,7 @@ var jsonArray = [
   },
   {
     "item": "16502-00-K",
-    "partDescription": "Wire #16 Red, 3.87in",
+    "partDescription": "Wire #16 Red, 3.87(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -94832,7 +94809,7 @@ var jsonArray = [
   },
   {
     "item": "16502-00-A",
-    "partDescription": "Wire #16 Red, 3.93in",
+    "partDescription": "Wire #16 Red, 3.93(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -94840,7 +94817,7 @@ var jsonArray = [
   },
   {
     "item": "16502-00-L",
-    "partDescription": "Wire #16 Red, 7.75in",
+    "partDescription": "Wire #16 Red, 7.75(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -94848,7 +94825,7 @@ var jsonArray = [
   },
   {
     "item": "16501-00-D",
-    "partDescription": "Wire #16 Yel, 8.86in",
+    "partDescription": "Wire #16 Yel, 8.86(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT LEAD",
@@ -94856,7 +94833,7 @@ var jsonArray = [
   },
   {
     "item": "16501-00-H",
-    "partDescription": "Wire #16 Yel, 9.6in",
+    "partDescription": "Wire #16 Yel, 9.6(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT LEAD",
@@ -94888,7 +94865,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-W",
-    "partDescription": "Wire #18 Black (10.16in)",
+    "partDescription": "Wire #18 Black (10.16(quote))",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -94896,7 +94873,7 @@ var jsonArray = [
   },
   {
     "item": "10473-00-W",
-    "partDescription": "Wire #18 Black (10.16in)",
+    "partDescription": "Wire #18 Black (10.16(quote))",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -94904,7 +94881,7 @@ var jsonArray = [
   },
   {
     "item": "31645-00-A",
-    "partDescription": "Wire #18 Blue 18.00in",
+    "partDescription": "Wire #18 Blue 18.00(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -94912,7 +94889,7 @@ var jsonArray = [
   },
   {
     "item": "31645-00-A",
-    "partDescription": "Wire #18 Blue 18.00in",
+    "partDescription": "Wire #18 Blue 18.00(quote)",
     "stkUM": "EA",
     "operation": 20,
     "operationDescription": "STRIP WIRE",
@@ -94920,7 +94897,7 @@ var jsonArray = [
   },
   {
     "item": "31645-00-A",
-    "partDescription": "Wire #18 Blue 18.00in",
+    "partDescription": "Wire #18 Blue 18.00(quote)",
     "stkUM": "EA",
     "operation": 30,
     "operationDescription": "TINNING",
@@ -95280,7 +95257,7 @@ var jsonArray = [
   },
   {
     "item": "10500-00-Q",
-    "partDescription": "Wire #18 Red 2.12in",
+    "partDescription": "Wire #18 Red 2.12(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE-AUTO",
@@ -95288,7 +95265,7 @@ var jsonArray = [
   },
   {
     "item": "10500-00-U01",
-    "partDescription": "Wire #18 Red 2.12in",
+    "partDescription": "Wire #18 Red 2.12(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95296,7 +95273,7 @@ var jsonArray = [
   },
   {
     "item": "10500-00-M01",
-    "partDescription": "Wire #18 Red 2.19in",
+    "partDescription": "Wire #18 Red 2.19(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95312,7 +95289,7 @@ var jsonArray = [
   },
   {
     "item": "10500-00-Q01",
-    "partDescription": "Wire #18 Red 5.94in",
+    "partDescription": "Wire #18 Red 5.94(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95320,7 +95297,7 @@ var jsonArray = [
   },
   {
     "item": "10500-00-N01",
-    "partDescription": "Wire #18 Red 6.84in",
+    "partDescription": "Wire #18 Red 6.84(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95352,7 +95329,7 @@ var jsonArray = [
   },
   {
     "item": "10505-00-J01",
-    "partDescription": "Wire #18 X-link Yellow 11.8in",
+    "partDescription": "Wire #18 X-link Yellow 11.8(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95384,7 +95361,7 @@ var jsonArray = [
   },
   {
     "item": "10505-00-C02",
-    "partDescription": "Wire #18 Yel 2.36in",
+    "partDescription": "Wire #18 Yel 2.36(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95392,7 +95369,7 @@ var jsonArray = [
   },
   {
     "item": "10505-00-C03",
-    "partDescription": "Wire #18 Yel 6.75in",
+    "partDescription": "Wire #18 Yel 6.75(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95400,7 +95377,7 @@ var jsonArray = [
   },
   {
     "item": "10505-00-C04",
-    "partDescription": "Wire #18 Yel 7.31in",
+    "partDescription": "Wire #18 Yel 7.31(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95408,7 +95385,7 @@ var jsonArray = [
   },
   {
     "item": "10505-00-Y01",
-    "partDescription": "Wire #18 Yel 8.35in",
+    "partDescription": "Wire #18 Yel 8.35(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95424,7 +95401,7 @@ var jsonArray = [
   },
   {
     "item": "10505-00-V01",
-    "partDescription": "Wire #18 Yellow 12.55in",
+    "partDescription": "Wire #18 Yellow 12.55(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT",
@@ -95448,7 +95425,7 @@ var jsonArray = [
   },
   {
     "item": "10505-00-D01",
-    "partDescription": "Wire #18 Yellow 9.30 in",
+    "partDescription": "Wire #18 Yellow 9.30 (quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE",
@@ -95496,7 +95473,7 @@ var jsonArray = [
   },
   {
     "item": "07199-00-H04",
-    "partDescription": "Wire #22 Neoprene Lead 2.63in",
+    "partDescription": "Wire #22 Neoprene Lead 2.63(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT NEOPRENE WIRE",
@@ -95672,7 +95649,7 @@ var jsonArray = [
   },
   {
     "item": "13968",
-    "partDescription": "Wire Lead Assy 9.87in",
+    "partDescription": "Wire Lead Assy 9.87(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "ASSM TERMINAL",
@@ -95752,7 +95729,7 @@ var jsonArray = [
   },
   {
     "item": "10500-00-J01",
-    "partDescription": "Wire Red #18, 9.19in",
+    "partDescription": "Wire Red #18, 9.19(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT WIRE-AUTO",
@@ -95792,7 +95769,7 @@ var jsonArray = [
   },
   {
     "item": "07199-00-V01",
-    "partDescription": "Wired #22 Neoprene Lead 2.31in",
+    "partDescription": "Wired #22 Neoprene Lead 2.31(quote)",
     "stkUM": "EA",
     "operation": 10,
     "operationDescription": "CUT NEOPRENE WIRE",
@@ -96038,24 +96015,4 @@ var jsonArray = [
     "operationDescription": "TAPE HEAT SINK",
     "itemType": 0
   }
-];
-
-var tempArray = [];
-for (var i = 0; i < jsonArray.length; i++) {
-	var item = jsonArray[i].item;
-	// console.log(i);
-	process.stdout.write(`Record ${i} saved of 12001 \r`);
-	if (!mistDB('db').has(item)) {
-		mistDB('db').set([item], [jsonArray[i]]);
-	} else {
-		tempArray = mistDB('db').get([item]);
-		tempArray.push(jsonArray[i]);
-
-		mistDB('db').set([item], tempArray);
-	}
-
-
-	if (i == (jsonArray.length) - 1) {
-		console.log("Done!");
-	}
-}
+]

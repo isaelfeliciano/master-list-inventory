@@ -4,6 +4,9 @@ var jsonData;
 $.getJSON("json/inventory_master_list.json", function(data) {
 	jsonData = data;
 });
+$.getJSON("json/inventory_master_list_by-item.json", function(data) {
+	jsonDataByItem = data;
+});
 
 var autoCompleteOptions = {
 	url: "json/inventory_master_list_no-duplicates.json",
@@ -41,7 +44,12 @@ $("#btn-search").on("click", function(e) {
 	loading(function() {
 	$("#items-list").empty();
 
-	var items = JSON.search(jsonData, '//*['+ filter +'="'+ value +'"]');
+	if (filter === "item") {
+		var items = jsonDataByItem.byItem[value];
+	} else {
+		var items = JSON.search(jsonData, '//*['+ filter +'="'+ value +'"]');
+	}
+
 
 	for (var i = 0; i < items.length; i++) {
 		$("#items-list").append('<table class="center-align">'+
