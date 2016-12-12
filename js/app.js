@@ -72,7 +72,7 @@ $("#btn-search").on("click", function(e) {
   '<tr class="row row__part-number"><td>'+ items[i].item +'</td></tr>'+
   '<tr class="row row__part-description separate-line"><td>'+ items[i].partDescription +'</td></tr>'+
     '<tr class="row row__data-group separate-line">'+
-      '<td><span>Stk UM:\n'+ items[i].stkUm +'</span></td>'+
+      '<td><span>Stk UM:\n'+ items[i].stkUM +'</span></td>'+
       '<td><span>Oper:\n'+ items[i].operation +'</span></td>'+
       '<td><span>I/T:\n'+ items[i].itemType +'</span></td>'+
     '</tr>'+ 
