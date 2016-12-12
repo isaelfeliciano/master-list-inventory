@@ -1,31 +1,40 @@
 var filter = $("#filter").val();
-var autoCompleteOptionsUrl = "json/inventory_master_list_no-duplicates.json";
 var jsonData;
-$.getJSON("json/inventory_master_list.json", function(data) {
+
+$.getJSON("json/inventory_master_list_indexed.json", function(data) {
 	jsonData = data;
 });
-$.getJSON("json/inventory_master_list_by-item.json", function(data) {
-	jsonDataByItem = data;
-});
 
-var autoCompleteOptions = {
-	url: "json/inventory_master_list_no-duplicates.json",
-	getValue: filter,
+var autoCompleteOptionsDefault = {
+	url: "json/auto-complete-item.json",
+	getValue: "item",
 	requestDelay: 500,
 	list: {
-		maxNumberOfElements: 10,
+		maxNumberOfElements: 15,
 		match: {
 			enabled: true
 		}
 	}
 };
 
-var autoCompleteOptions2 = {
-	url: "json/inventory_master_list_operation-description.json",
+var autoCompleteOptionsOperDescription = {
+	url: "json/auto-complete-operationDescription.json",
 	getValue: "operationDescription",
 	requestDelay: 500,
 	list: {
-		maxNumberOfElements: 10,
+		maxNumberOfElements: 15,
+		match: {
+			enabled: true
+		}
+	}
+};
+
+var autoCompleteOptionsPartDescription = {
+	url: "json/auto-complete-partDescription.json",
+	getValue: "partDescription",
+	requestDelay: 500,
+	list: {
+		maxNumberOfElements: 15,
 		match: {
 			enabled: true
 		}
@@ -34,7 +43,7 @@ var autoCompleteOptions2 = {
 
 
 
-$("#search").easyAutocomplete(autoCompleteOptions);
+$("#search").easyAutocomplete(autoCompleteOptionsDefault);
 $("#btn-search").on("click", function(e) {
 	e.preventDefault();
 	var value = $("#search").val();
@@ -45,10 +54,17 @@ $("#btn-search").on("click", function(e) {
 	$("#items-list").empty();
 
 	if (filter === "item") {
-		var items = jsonDataByItem.byItem[value];
-	} else {
-		var items = JSON.search(jsonData, '//*['+ filter +'="'+ value +'"]');
+		var items = jsonData.byItem[value];
+	} 
+	if (filter === "partDescription") {
+		var items = jsonData.byPartDescription[value];
 	}
+	if (filter === "operationDescription") {
+		var items = jsonData.byOperationDescription[value];
+	}
+	/*else {
+		var items = JSON.search(jsonData, '//*['+ filter +'="'+ value +'"]');
+	}*/
 
 
 	for (var i = 0; i < items.length; i++) {
@@ -72,12 +88,15 @@ $("#btn-search").on("click", function(e) {
 
 $("#filter").on('change', function(e) {
 	filter = $("#filter").val();
-	autoCompleteOptions.getValue = filter;
+	// autoCompleteOptions.getValue = filter;
 
-	if (filter === "item" || filter === "partDescription") {
-		$("#search").easyAutocomplete(autoCompleteOptions);
+	if (filter === "item") {
+		$("#search").easyAutocomplete(autoCompleteOptionsDefault);
+	} 
+	if (filter === "partDescription") {
+		$("#search").easyAutocomplete(autoCompleteOptionsPartDescription)
 	} else {
-		$("#search").easyAutocomplete(autoCompleteOptions2);
+		$("#search").easyAutocomplete(autoCompleteOptionsOperDescription);
 	}
 });
 

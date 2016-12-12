@@ -1,25 +1,4 @@
-
-var low = require('lowdb');
-
-// var db = low("db.json");
-var _ = require('lodash');
-
-var _db = require('underscore-db');
-
-_.mixin(_db);
-
-// db.defaults({data: {} });
-// db.set('data', {}).value();
-
-var uDB = {data: {}}; 
-
-// var jsonDB = require('jsondatabase');
-// var _data = new jsonDB({
-// 	path: './db.json'
-// }); 
-
 var mistDB = require('mistdb')('db');
-
 
 var jsonArray = [
   {
@@ -96042,7 +96021,7 @@ var jsonArray = [
 
 var tempArray = [];
 for (var i = 0; i < jsonArray.length; i++) {
-	var item = jsonArray[i].item;
+	var item = jsonArray[i].operationDescription;
 	// console.log(i);
 	process.stdout.write(`Record ${i} saved of 12001 \r`);
 	if (!mistDB('db').has(item)) {
