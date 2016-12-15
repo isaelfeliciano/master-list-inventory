@@ -1,12 +1,12 @@
 var filter = $("#filter").val();
-var jsonData;
+/*var jsonData;
 
 $.getJSON("json/inventory_master_list_indexed.json", function(data) {
 	jsonData = data;
-});
+});*/
 
 var autoCompleteOptionsDefault = {
-	url: "json/auto-complete-item.json",
+	data: autoCompleteItem,
 	getValue: "item",
 	requestDelay: 500,
 	list: {
@@ -18,7 +18,7 @@ var autoCompleteOptionsDefault = {
 };
 
 var autoCompleteOptionsOperDescription = {
-	url: "json/auto-complete-operationDescription.json",
+	data: autoCompleteOperationDescription,
 	getValue: "operationDescription",
 	requestDelay: 500,
 	list: {
@@ -30,7 +30,7 @@ var autoCompleteOptionsOperDescription = {
 };
 
 var autoCompleteOptionsPartDescription = {
-	url: "json/auto-complete-partDescription.json",
+	data: autoCompletePartDescription,
 	getValue: "partDescription",
 	requestDelay: 500,
 	list: {
