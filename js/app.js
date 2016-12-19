@@ -1,10 +1,4 @@
 var filter = $("#filter").val();
-/*var jsonData;
-
-$.getJSON("json/inventory_master_list_indexed.json", function(data) {
-	jsonData = data;
-});*/
-
 var autoCompleteOptionsDefault = {
 	data: autoCompleteItem,
 	getValue: "item",
@@ -41,9 +35,9 @@ var autoCompleteOptionsPartDescription = {
 	}
 };
 
-
-
-$("#search").easyAutocomplete(autoCompleteOptionsDefault);
+$("option").attr("selected", false);
+$('option[value="item"]').attr("selected", true);
+easyAutocompleteUpdateOptions(autoCompleteOptionsDefault);
 $("#btn-search").on("click", function(e) {
 	e.preventDefault();
 	var value = $("#search").val();
@@ -53,20 +47,8 @@ $("#btn-search").on("click", function(e) {
 	loading(function() {
 	$("#items-list").empty();
 
-	if (filter === "item") {
-		var items = jsonData.byItem[value];
-	} 
-	if (filter === "partDescription") {
-		var items = jsonData.byPartDescription[value];
-	}
-	if (filter === "operationDescription") {
-		var items = jsonData.byOperationDescription[value];
-	}
-	/*else {
-		var items = JSON.search(jsonData, '//*['+ filter +'="'+ value +'"]');
-	}*/
-
-
+	items = filterChange(value);
+	
 	for (var i = 0; i < items.length; i++) {
 		$("#items-list").append('<table class="center-align">'+
   '<tr class="row row__part-number"><td>'+ items[i].item +'</td></tr>'+
@@ -86,25 +68,33 @@ $("#btn-search").on("click", function(e) {
 });
 });
 
-function filterChange () {
+function filterChange (value) {
+	var result;
 	filter = $("#filter").val();
-	// autoCompleteOptions.getValue = filter;
 	$("#search").val("");
 
-	if (filter === "item") {
-		$("#search").easyAutocomplete(autoCompleteOptionsDefault);
-		window.location.reload();
-	} 
-	if (filter === "partDescription") {
-		$("#search").easyAutocomplete(autoCompleteOptionsPartDescription)
-	} else {
-		$("#search").easyAutocomplete(autoCompleteOptionsOperDescription);
+	switch (filter) {
+	case "item":
+		easyAutocompleteUpdateOptions(autoCompleteOptionsDefault);
+		result = jsonData.byItem[value];
+		break;
+	case "partDescription":
+		easyAutocompleteUpdateOptions(autoCompleteOptionsPartDescription)
+		result = jsonData.byPartDescription[value];
+		break;
+	case "operationDescription":
+		easyAutocompleteUpdateOptions(autoCompleteOptionsOperDescription);
+		result = jsonData.byOperationDescription[value];
+		break;
 	}
+	return result;
 }
 
-if (filter === "item") {
-	$("#search").easyAutocomplete(autoCompleteOptionsDefault);
-} 
+function easyAutocompleteUpdateOptions(options) {
+	$("#search").easyAutocomplete(options);
+	$("#search").focus();
+}
+
 $("#filter").on('change', function(e) {
 	filterChange();
 });
